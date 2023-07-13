@@ -64,7 +64,7 @@ def mavenRepackJar = tasks.register("mavenRepackJar", Jar) { repackJar ->
 }
 
 dependencies {
-	asciidoctorExt 'io.spring.asciidoctor.backends:spring-asciidoctor-backends:0.0.3'
+	asciidoctorExt 'io.spring.asciidoctor.backends:spring-asciidoctor-backends:0.0.4'
 
 	checkstyle 'io.spring.javaformat:spring-javaformat-checkstyle:0.0.34'
 
