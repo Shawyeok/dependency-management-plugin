@@ -17,6 +17,7 @@
 package io.spring.gradle.dependencymanagement.internal;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -79,7 +80,7 @@ public class DependencyManagement {
 	}
 
 	List<PomReference> getImportedBomReferences() {
-		return this.importedBoms;
+		return Collections.unmodifiableList(this.importedBoms);
 	}
 
 	Map<String, String> getImportedProperties() {
